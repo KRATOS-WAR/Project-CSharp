@@ -1,0 +1,5 @@
+C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.csprojAssemblyReference.cache
+C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\ObjetoTransferencia\bin\Debug\ObjetoTransferencia.dll
+C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\ObjetoTransferencia\bin\Debug\ObjetoTransferencia.pdb
+C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.dll
+C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.pdb

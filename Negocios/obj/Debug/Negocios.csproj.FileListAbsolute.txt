@@ -1,0 +1,11 @@
+C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\Negocios\bin\Debug\Negocios.dll
+C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\Negocios\bin\Debug\Negocios.pdb
+C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\Negocios\bin\Debug\AcessoBancoDados.dll
+C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\Negocios\bin\Debug\ObjetoTransferencia.dll
+C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\Negocios\bin\Debug\AcessoBancoDados.pdb
+C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\Negocios\bin\Debug\AcessoBancoDados.dll.config
+C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\Negocios\bin\Debug\ObjetoTransferencia.pdb
+C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\Negocios\obj\Debug\Negocios.csprojAssemblyReference.cache
+C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\Negocios\obj\Debug\Negocios.csproj.CopyComplete
+C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\Negocios\obj\Debug\Negocios.dll
+C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\Negocios\obj\Debug\Negocios.pdb
