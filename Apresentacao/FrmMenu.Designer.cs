@@ -49,7 +49,7 @@
             // 
             this.barraStatusPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.labelVersao});
-            this.barraStatusPrincipal.Location = new System.Drawing.Point(0, 378);
+            this.barraStatusPrincipal.Location = new System.Drawing.Point(0, 365);
             this.barraStatusPrincipal.Name = "barraStatusPrincipal";
             this.barraStatusPrincipal.Size = new System.Drawing.Size(784, 22);
             this.barraStatusPrincipal.TabIndex = 1;
@@ -147,7 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 400);
+            this.ClientSize = new System.Drawing.Size(784, 387);
             this.Controls.Add(this.barraStatusPrincipal);
             this.Controls.Add(this.menuPrincipal);
             this.IsMdiContainer = true;
