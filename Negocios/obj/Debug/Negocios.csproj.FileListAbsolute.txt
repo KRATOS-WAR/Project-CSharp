@@ -9,3 +9,14 @@ C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\Negocios\obj\Debug\Negocios.
 C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\Negocios\obj\Debug\Negocios.csproj.CopyComplete
 C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\Negocios\obj\Debug\Negocios.dll
 C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\Negocios\obj\Debug\Negocios.pdb
+C:\Users\henri\Source\Repos\Project-CSharp\Negocios\bin\Debug\Negocios.dll
+C:\Users\henri\Source\Repos\Project-CSharp\Negocios\bin\Debug\Negocios.pdb
+C:\Users\henri\Source\Repos\Project-CSharp\Negocios\bin\Debug\AcessoBancoDados.dll
+C:\Users\henri\Source\Repos\Project-CSharp\Negocios\bin\Debug\ObjetoTransferencia.dll
+C:\Users\henri\Source\Repos\Project-CSharp\Negocios\bin\Debug\AcessoBancoDados.pdb
+C:\Users\henri\Source\Repos\Project-CSharp\Negocios\bin\Debug\AcessoBancoDados.dll.config
+C:\Users\henri\Source\Repos\Project-CSharp\Negocios\bin\Debug\ObjetoTransferencia.pdb
+C:\Users\henri\Source\Repos\Project-CSharp\Negocios\obj\Debug\Negocios.csprojAssemblyReference.cache
+C:\Users\henri\Source\Repos\Project-CSharp\Negocios\obj\Debug\Negocios.csproj.CopyComplete
+C:\Users\henri\Source\Repos\Project-CSharp\Negocios\obj\Debug\Negocios.dll
+C:\Users\henri\Source\Repos\Project-CSharp\Negocios\obj\Debug\Negocios.pdb

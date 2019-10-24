@@ -4,3 +4,8 @@ C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\AcessoBancoDados\bin\Debug\A
 C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\AcessoBancoDados\obj\Debug\AcessoBancoDados.csprojAssemblyReference.cache
 C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\AcessoBancoDados\obj\Debug\AcessoBancoDados.dll
 C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\AcessoBancoDados\obj\Debug\AcessoBancoDados.pdb
+C:\Users\henri\Source\Repos\Project-CSharp\AcessoBancoDados\bin\Debug\AcessoBancoDados.dll.config
+C:\Users\henri\Source\Repos\Project-CSharp\AcessoBancoDados\bin\Debug\AcessoBancoDados.dll
+C:\Users\henri\Source\Repos\Project-CSharp\AcessoBancoDados\bin\Debug\AcessoBancoDados.pdb
+C:\Users\henri\Source\Repos\Project-CSharp\AcessoBancoDados\obj\Debug\AcessoBancoDados.dll
+C:\Users\henri\Source\Repos\Project-CSharp\AcessoBancoDados\obj\Debug\AcessoBancoDados.pdb

@@ -3,3 +3,8 @@ C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\ObjetoTransferencia\bin\Debu
 C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\ObjetoTransferencia\bin\Debug\ObjetoTransferencia.pdb
 C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.dll
 C:\Users\henri\Documents\ProjetosC#\Temporada2Venda\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.pdb
+C:\Users\henri\Source\Repos\Project-CSharp\ObjetoTransferencia\bin\Debug\ObjetoTransferencia.dll
+C:\Users\henri\Source\Repos\Project-CSharp\ObjetoTransferencia\bin\Debug\ObjetoTransferencia.pdb
+C:\Users\henri\Source\Repos\Project-CSharp\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.dll
+C:\Users\henri\Source\Repos\Project-CSharp\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.pdb
+C:\Users\henri\Source\Repos\Project-CSharp\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.csprojAssemblyReference.cache

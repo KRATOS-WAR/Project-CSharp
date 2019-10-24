@@ -71,5 +71,16 @@ namespace Apresentacao
         {
 
         }
+
+        private void lblPercentualDesconto_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPesquisarEmitente_Click(object sender, EventArgs e)
+        {
+            FrmFilialPesquisar frmFilialPesquisar = new FrmFilialPesquisar();
+            frmFilialPesquisar.ShowDialog();
+        }
     }
 }

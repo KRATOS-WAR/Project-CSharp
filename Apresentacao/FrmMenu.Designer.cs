@@ -133,8 +133,9 @@
             // menuPedido
             // 
             this.menuPedido.Name = "menuPedido";
-            this.menuPedido.Size = new System.Drawing.Size(111, 22);
+            this.menuPedido.Size = new System.Drawing.Size(180, 22);
             this.menuPedido.Text = "Pedido";
+            this.menuPedido.Click += new System.EventHandler(this.menuPedido_Click);
             // 
             // menuSair
             // 
