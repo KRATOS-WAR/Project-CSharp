@@ -15,6 +15,11 @@ namespace Apresentacao
         public FrmMenu()
         {
             InitializeComponent();
+
+            this.Visible = false;
+            FrmLogin login = new FrmLogin();
+            login.ShowDialog(this);
+            this.Visible = true;
         }
 
         private void FrmMenu_Load(object sender, EventArgs e)

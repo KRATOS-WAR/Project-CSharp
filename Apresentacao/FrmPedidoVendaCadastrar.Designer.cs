@@ -85,6 +85,7 @@
             this.txtEmitente.Name = "txtEmitente";
             this.txtEmitente.Size = new System.Drawing.Size(452, 20);
             this.txtEmitente.TabIndex = 1;
+            this.txtEmitente.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtEmitente_KeyDown);
             // 
             // btnPesquisarEmitente
             // 
@@ -104,6 +105,7 @@
             this.btnPesquisarDestinatario.TabIndex = 5;
             this.btnPesquisarDestinatario.Text = ". . .";
             this.btnPesquisarDestinatario.UseVisualStyleBackColor = true;
+            this.btnPesquisarDestinatario.Click += new System.EventHandler(this.btnPesquisarDestinatario_Click);
             // 
             // txtDestinatario
             // 
@@ -111,6 +113,7 @@
             this.txtDestinatario.Name = "txtDestinatario";
             this.txtDestinatario.Size = new System.Drawing.Size(452, 20);
             this.txtDestinatario.TabIndex = 4;
+            this.txtDestinatario.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDestinatario_KeyDown);
             // 
             // lblDestinatario
             // 

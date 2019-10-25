@@ -8,10 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using ObjetoTransferencia;
+
 namespace Apresentacao
 {
     public partial class FrmPedidoVendaCadastrar : Form
     {
+
+        Filial filialEmitente;
+        Cliente clienteDestinatario;
+
         public FrmPedidoVendaCadastrar()
         {
             InitializeComponent();
@@ -80,7 +86,46 @@ namespace Apresentacao
         private void btnPesquisarEmitente_Click(object sender, EventArgs e)
         {
             FrmFilialPesquisar frmFilialPesquisar = new FrmFilialPesquisar();
-            frmFilialPesquisar.ShowDialog();
+            DialogResult resultado = frmFilialPesquisar.ShowDialog();
+
+            if(resultado == System.Windows.Forms.DialogResult.OK)
+            {
+                txtEmitente.Text = frmFilialPesquisar.filialSelecionada.Pessoa.Nome;
+
+                filialEmitente = frmFilialPesquisar.filialSelecionada;
+            }
+        }
+
+        private void txtEmitente_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
+                txtEmitente.Clear();
+                filialEmitente = null;
+            }
+        }
+
+        private void btnPesquisarDestinatario_Click(object sender, EventArgs e)
+        {
+            FrmClientePesquisar frmClientePesquisar = new FrmClientePesquisar();
+
+            DialogResult resultado = frmClientePesquisar.ShowDialog();
+
+            if (resultado == System.Windows.Forms.DialogResult.OK)
+            {
+                txtDestinatario.Text = frmClientePesquisar.clienteSelecionado.Pessoa.Nome;
+
+                clienteDestinatario = frmClientePesquisar.clienteSelecionado;
+            }
+        }
+
+        private void txtDestinatario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Delete)
+            {
+                txtDestinatario.Clear();
+                clienteDestinatario = null;
+            }
         }
     }
 }

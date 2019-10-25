@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmClientePesquisar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientePesquisar.Designer.cs">
+      <DependentUpon>FrmClientePesquisar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmFilialPesquisar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmFilialPesquisar.Designer.cs">
       <DependentUpon>FrmFilialPesquisar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLoginCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLoginCadastrar.Designer.cs">
+      <DependentUpon>FrmLoginCadastrar.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMenu.cs">
       <SubType>Form</SubType>
@@ -66,8 +84,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmClientePesquisar.resx">
+      <DependentUpon>FrmClientePesquisar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmFilialPesquisar.resx">
       <DependentUpon>FrmFilialPesquisar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLoginCadastrar.resx">
+      <DependentUpon>FrmLoginCadastrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>

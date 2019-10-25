@@ -8,55 +8,49 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using Negocios;
 using ObjetoTransferencia;
+using Negocios;
 using System.Reflection;
 
 namespace Apresentacao
 {
-    public partial class FrmFilialPesquisar : Form
+    public partial class FrmClientePesquisar : Form
     {
+        public Cliente clienteSelecionado { get; set; }
 
-        public Filial filialSelecionada { get; set; }
-
-        public FrmFilialPesquisar()
+        public FrmClientePesquisar()
         {
             InitializeComponent();
 
             dgwPrincipal.AutoGenerateColumns = false;
         }
 
-        private void lblPesquisar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            FilialNegocios filialNegocios = new FilialNegocios();
+            ClienteNegocios clienteNegocios = new ClienteNegocios();
 
             //Digitou número ou nome?
-            int codigoDigitado;
-            FilialColecao filialColecao = new FilialColecao();
+            ClienteColecao clienteColecao = new ClienteColecao();
 
+            int codigoDigitado;
             if (int.TryParse(txtPesquisar.Text, out codigoDigitado) == true)
             {
                 //Conseguiu, é um número
-                filialColecao = filialNegocios.ConsultarPorCodigo(codigoDigitado);
+                clienteColecao = clienteNegocios.Consultar(codigoDigitado, null);
             }
-            else{
+            else
+            {
                 //Não conseguiu, é um texto
-                filialColecao = filialNegocios.ConsultarPorNome(txtPesquisar.Text);
+                clienteColecao = clienteNegocios.Consultar(null, txtPesquisar.Text);
             }
 
             dgwPrincipal.DataSource = null;
-            dgwPrincipal.DataSource = filialColecao;
+            dgwPrincipal.DataSource = clienteColecao;
 
             dgwPrincipal.Update();
             dgwPrincipal.Refresh();
         }
 
-        //BindProperty
         private object CarregarPropriedade(object propriedade, string nomeDaPropriedade)
         {
             try
@@ -71,13 +65,13 @@ namespace Apresentacao
 
                     propriedadeAntesDoPonto = nomeDaPropriedade.Substring(0, nomeDaPropriedade.IndexOf("."));
 
-                    if(propriedade != null)
+                    if (propriedade != null)
                     {
                         propertyInfoArray = propriedade.GetType().GetProperties();
 
                         foreach (PropertyInfo propertyInfo in propertyInfoArray)
                         {
-                            if(propertyInfo.Name == propriedadeAntesDoPonto)
+                            if (propertyInfo.Name == propriedadeAntesDoPonto)
                             {
                                 retorno =
                                     CarregarPropriedade
@@ -94,7 +88,7 @@ namespace Apresentacao
                     Type tpyPropertyType;
                     PropertyInfo pfoPropertyInfo;
 
-                    if(propriedade != null)
+                    if (propriedade != null)
                     {
                         tpyPropertyType = propriedade.GetType();
                         pfoPropertyInfo = tpyPropertyType.GetProperty(nomeDaPropriedade);
@@ -129,13 +123,13 @@ namespace Apresentacao
 
         private void btnSelecionar_Click(object sender, EventArgs e)
         {
-            if(dgwPrincipal.Rows.Count < 0)
+            if (dgwPrincipal.Rows.Count < 0)
             {
                 MessageBox.Show("Nenhuma linha selecionada. ");
                 return;
             }
 
-            filialSelecionada = dgwPrincipal.SelectedRows[0].DataBoundItem as Filial;
+            clienteSelecionado = dgwPrincipal.SelectedRows[0].DataBoundItem as Cliente;
 
             DialogResult = System.Windows.Forms.DialogResult.OK;
         }

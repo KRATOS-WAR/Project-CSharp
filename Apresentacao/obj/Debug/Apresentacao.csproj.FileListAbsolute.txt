@@ -26,3 +26,6 @@ C:\Users\henri\Source\Repos\Project-CSharp\Apresentacao\bin\Debug\ObjetoTransfer
 C:\Users\henri\Source\Repos\Project-CSharp\Apresentacao\bin\Debug\AcessoBancoDados.pdb
 C:\Users\henri\Source\Repos\Project-CSharp\Apresentacao\bin\Debug\AcessoBancoDados.dll.config
 C:\Users\henri\Source\Repos\Project-CSharp\Apresentacao\obj\Debug\Apresentacao.csproj.CopyComplete
+C:\Users\henri\Source\Repos\Project-CSharp\Apresentacao\obj\Debug\Apresentacao.FrmClientePesquisar.resources
+C:\Users\henri\Source\Repos\Project-CSharp\Apresentacao\obj\Debug\Apresentacao.FrmLogin.resources
+C:\Users\henri\Source\Repos\Project-CSharp\Apresentacao\obj\Debug\Apresentacao.FrmLoginCadastrar.resources
