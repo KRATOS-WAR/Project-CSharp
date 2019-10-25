@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 using Negocios;
 using ObjetoTransferencia;
+using System.Reflection;
 
 namespace Apresentacao
 {
@@ -18,6 +19,8 @@ namespace Apresentacao
         public FrmFilialPesquisar()
         {
             InitializeComponent();
+
+            dgwPrincipal.AutoGenerateColumns = false;
         }
 
         private void lblPesquisar_Click(object sender, EventArgs e)
@@ -48,6 +51,53 @@ namespace Apresentacao
 
             dgwPrincipal.Update();
             dgwPrincipal.Refresh();
+        }
+
+        //BindProperty
+        private object CarregarPropriedade(object propriedade, string nomeDaPropriedade)
+        {
+            try
+            {
+                object retorno = "";
+
+                if (nomeDaPropriedade.Contains("."))
+                {
+                    //Pessoa.IDPessoa
+                    PropertyInfo[] propertyInfoArray;
+                    string propriedadeAntesDoPonto;
+
+                    propriedadeAntesDoPonto = nomeDaPropriedade.Substring(0, nomeDaPropriedade.IndexOf("."));
+
+                    if(propriedade != null)
+                    {
+                        propertyInfoArray = propriedade.GetType().GetProperties();
+
+                        foreach (PropertyInfo propertyInfo in propertyInfoArray)
+                        {
+                            if(propertyInfo.Name == propriedadeAntesDoPonto)
+                            {
+                                retorno =
+                                    CarregarPropriedade
+                                    (
+                                        propertyInfo.GetValue(propriedade, null),
+                                        nomeDaPropriedade.Substring(nomeDaPropriedade.IndexOf(".") + 1)
+                                    );
+                            }
+                        }
+                    }
+                }
+                else
+                {
+
+                }
+
+                return retorno;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return null;
+            }
         }
     }
 }
