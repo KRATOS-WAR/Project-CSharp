@@ -53,7 +53,6 @@
     <Compile Include="FilialColecao.cs" />
     <Compile Include="Fornecedor.cs" />
     <Compile Include="FornecedorColecao.cs" />
-    <Compile Include="Login.cs" />
     <Compile Include="Operacao.cs" />
     <Compile Include="OperacaoColecao.cs" />
     <Compile Include="Pedido.cs" />

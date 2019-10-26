@@ -16,10 +16,10 @@ namespace Apresentacao
         {
             InitializeComponent();
 
-            this.Visible = false;
-            FrmLogin login = new FrmLogin();
-            login.ShowDialog(this);
-            this.Visible = true;
+            //this.Visible = false;
+            //FrmLogin login = new FrmLogin();
+            //login.ShowDialog(this);
+            //this.Visible = true;
         }
 
         private void FrmMenu_Load(object sender, EventArgs e)
@@ -34,9 +34,9 @@ namespace Apresentacao
 
         private void menuPedido_Click(object sender, EventArgs e)
         {
-            FrmPedidoVendaCadastrar frmPedidoVendaCadastrar = new FrmPedidoVendaCadastrar();
-            frmPedidoVendaCadastrar.MdiParent = this;
-            frmPedidoVendaCadastrar.Show();
+            //FrmPedidoVendaCadastrar frmPedidoVendaCadastrar = new FrmPedidoVendaCadastrar();
+            //frmPedidoVendaCadastrar.MdiParent = this;
+            //frmPedidoVendaCadastrar.Show();
         }
     }
 }
