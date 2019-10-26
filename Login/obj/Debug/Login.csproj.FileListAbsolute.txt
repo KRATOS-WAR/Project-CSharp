@@ -19,3 +19,7 @@ C:\Users\henri\Source\Repos\Project-CSharp\Login\bin\Debug\Negocios.pdb
 C:\Users\henri\Source\Repos\Project-CSharp\Login\bin\Debug\AcessoBancoDados.pdb
 C:\Users\henri\Source\Repos\Project-CSharp\Login\bin\Debug\AcessoBancoDados.dll.config
 C:\Users\henri\Source\Repos\Project-CSharp\Login\obj\Debug\Login.csproj.CopyComplete
+C:\Users\henri\Source\Repos\Project-CSharp\Login\obj\Debug\Apresentacao.FrmClientePesquisar.resources
+C:\Users\henri\Source\Repos\Project-CSharp\Login\obj\Debug\Apresentacao.FrmFilialPesquisar.resources
+C:\Users\henri\Source\Repos\Project-CSharp\Login\obj\Debug\Apresentacao.FrmMenu.resources
+C:\Users\henri\Source\Repos\Project-CSharp\Login\obj\Debug\Apresentacao.FrmPedidoVendaCadastrar.resources

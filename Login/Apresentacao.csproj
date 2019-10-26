@@ -60,6 +60,30 @@
     <Compile Include="ApresentacaoLogin\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmClientePesquisar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientePesquisar.Designer.cs">
+      <DependentUpon>FrmClientePesquisar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFilialPesquisar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFilialPesquisar.Designer.cs">
+      <DependentUpon>FrmFilialPesquisar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPedidoVendaCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPedidoVendaCadastrar.Designer.cs">
+      <DependentUpon>FrmPedidoVendaCadastrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modelo\Controle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -68,6 +92,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ApresentacaoLogin\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientePesquisar.resx">
+      <DependentUpon>FrmClientePesquisar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFilialPesquisar.resx">
+      <DependentUpon>FrmFilialPesquisar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPedidoVendaCadastrar.resx">
+      <DependentUpon>FrmPedidoVendaCadastrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -92,9 +128,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Apresentacao\Apresentacao.csproj">
-      <Project>{0569c6f0-be46-4935-8031-36e7bfa39ebd}</Project>
-      <Name>Apresentacao</Name>
+    <ProjectReference Include="..\AcessoBancoDados\AcessoBancoDados.csproj">
+      <Project>{d6779ef6-3e7a-4caa-8815-caf91bf057f3}</Project>
+      <Name>AcessoBancoDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocios\Negocios.csproj">
+      <Project>{f52e12c9-e9a2-4899-ae20-c414c69ce879}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ObjetoTransferencia\ObjetoTransferencia.csproj">
+      <Project>{9fd3f161-aeaf-41bd-ad10-0424bfac8628}</Project>
+      <Name>ObjetoTransferencia</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

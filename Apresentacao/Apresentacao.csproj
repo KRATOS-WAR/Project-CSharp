@@ -46,43 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmClientePesquisar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmClientePesquisar.Designer.cs">
-      <DependentUpon>FrmClientePesquisar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmFilialPesquisar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmFilialPesquisar.Designer.cs">
-      <DependentUpon>FrmFilialPesquisar.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmMenu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmMenu.Designer.cs">
-      <DependentUpon>FrmMenu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPedidoVendaCadastrar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPedidoVendaCadastrar.Designer.cs">
-      <DependentUpon>FrmPedidoVendaCadastrar.cs</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmClientePesquisar.resx">
-      <DependentUpon>FrmClientePesquisar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmFilialPesquisar.resx">
-      <DependentUpon>FrmFilialPesquisar.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmMenu.resx">
-      <DependentUpon>FrmMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmPedidoVendaCadastrar.resx">
-      <DependentUpon>FrmPedidoVendaCadastrar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

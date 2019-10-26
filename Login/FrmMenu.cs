@@ -34,9 +34,9 @@ namespace Apresentacao
 
         private void menuPedido_Click(object sender, EventArgs e)
         {
-            //FrmPedidoVendaCadastrar frmPedidoVendaCadastrar = new FrmPedidoVendaCadastrar();
-            //frmPedidoVendaCadastrar.MdiParent = this;
-            //frmPedidoVendaCadastrar.Show();
+            FrmPedidoVendaCadastrar frmPedidoVendaCadastrar = new FrmPedidoVendaCadastrar();
+            frmPedidoVendaCadastrar.MdiParent = this;
+            frmPedidoVendaCadastrar.Show();
         }
     }
 }
