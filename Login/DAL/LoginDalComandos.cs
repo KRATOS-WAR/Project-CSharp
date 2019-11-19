@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Login.DAL;
+using AcessoBancoDados;
+using System.Data;
 
 namespace Login.DAL
 {
@@ -16,6 +18,7 @@ namespace Login.DAL
         SqlCommand cmd = new SqlCommand();
         Conexao conexao = new Conexao();
         SqlDataReader dr;
+        AcessoDadosSqlServer acessoDados = new AcessoDadosSqlServer();
 
         public bool verificarLogin(String login, String senha)
         {
@@ -51,17 +54,35 @@ namespace Login.DAL
             //Comandos para inserir
             if (senha.Equals(confSenha))
             {
-               cmd.CommandText = "INSERT INTO tblLogin VALUES (@e, @s);";
-               cmd.Parameters.AddWithValue("@e", email);
-               cmd.Parameters.AddWithValue("@s", senha);
+                //cmd.CommandText = "INSERT INTO tblLogin VALUES (@e, @s);";
+                //cmd.Parameters.AddWithValue("@e", email);
+                //cmd.Parameters.AddWithValue("@s", senha);
+               
+                acessoDados.LimparParametros();
+                acessoDados.AdicionarParametros("@Usuario", email);
+                acessoDados.AdicionarParametros("@Senha", senha);
 
+                string idLogin = acessoDados.ExecutarManipulacao(
+                    CommandType.StoredProcedure, "uspLoginInserir").ToString();
+
+                mensagem = idLogin;
+             
                 try
                 {
                     cmd.Connection = conexao.Conectar();
-                    cmd.ExecuteNonQuery();
-                    conexao.Desconectar();
-                    this.mensagem = "Cadastrado com Sucesso";
-                    tem = true;
+                    //cmd.ExecuteNonQuery();
+                    if(mensagem == "Login já existe")
+                    {
+                        conexao.Desconectar();
+                        this.mensagem = "Usuário já existe. Por favor insira outro!!";
+                        tem = false;
+                    }
+                    else
+                    {
+                        conexao.Desconectar();
+                        this.mensagem = "Cadastrado com Sucesso";
+                        tem = true;
+                    }
                 }
                 catch (SqlException)
                 {

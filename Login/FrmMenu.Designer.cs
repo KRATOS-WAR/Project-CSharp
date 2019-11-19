@@ -89,37 +89,38 @@
             // menuCliente
             // 
             this.menuCliente.Name = "menuCliente";
-            this.menuCliente.Size = new System.Drawing.Size(153, 22);
+            this.menuCliente.Size = new System.Drawing.Size(180, 22);
             this.menuCliente.Text = "Cliente";
+            this.menuCliente.Click += new System.EventHandler(this.menuCliente_Click);
             // 
             // menuFilial
             // 
             this.menuFilial.Name = "menuFilial";
-            this.menuFilial.Size = new System.Drawing.Size(153, 22);
+            this.menuFilial.Size = new System.Drawing.Size(180, 22);
             this.menuFilial.Text = "Filial";
             // 
             // menuFornecedor
             // 
             this.menuFornecedor.Name = "menuFornecedor";
-            this.menuFornecedor.Size = new System.Drawing.Size(153, 22);
+            this.menuFornecedor.Size = new System.Drawing.Size(180, 22);
             this.menuFornecedor.Text = "Fornecedor";
             // 
             // menuPessoaFisica
             // 
             this.menuPessoaFisica.Name = "menuPessoaFisica";
-            this.menuPessoaFisica.Size = new System.Drawing.Size(153, 22);
+            this.menuPessoaFisica.Size = new System.Drawing.Size(180, 22);
             this.menuPessoaFisica.Text = "Pessoa Física";
             // 
             // menuPessoaJuridica
             // 
             this.menuPessoaJuridica.Name = "menuPessoaJuridica";
-            this.menuPessoaJuridica.Size = new System.Drawing.Size(153, 22);
+            this.menuPessoaJuridica.Size = new System.Drawing.Size(180, 22);
             this.menuPessoaJuridica.Text = "Pessoa Jurídica";
             // 
             // menuProduto
             // 
             this.menuProduto.Name = "menuProduto";
-            this.menuProduto.Size = new System.Drawing.Size(153, 22);
+            this.menuProduto.Size = new System.Drawing.Size(180, 22);
             this.menuProduto.Text = "Produto";
             // 
             // menuVenda
@@ -133,7 +134,7 @@
             // menuPedido
             // 
             this.menuPedido.Name = "menuPedido";
-            this.menuPedido.Size = new System.Drawing.Size(180, 22);
+            this.menuPedido.Size = new System.Drawing.Size(111, 22);
             this.menuPedido.Text = "Pedido";
             this.menuPedido.Click += new System.EventHandler(this.menuPedido_Click);
             // 

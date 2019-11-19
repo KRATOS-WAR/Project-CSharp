@@ -52,6 +52,7 @@
     <Compile Include="ApresentacaoLogin\FrmCadastrarLogin.Designer.cs">
       <DependentUpon>FrmCadastrarLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="DAL\ChecarForcaSenha.cs" />
     <Compile Include="DAL\Conexao.cs" />
     <Compile Include="DAL\LoginDalComandos.cs" />
     <Compile Include="ApresentacaoLogin\FrmLogin.cs">
@@ -59,6 +60,12 @@
     </Compile>
     <Compile Include="ApresentacaoLogin\FrmLogin.Designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClienteCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClienteCadastrar.Designer.cs">
+      <DependentUpon>FrmClienteCadastrar.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmClientePesquisar.cs">
       <SubType>Form</SubType>
@@ -84,6 +91,12 @@
     <Compile Include="FrmPedidoVendaCadastrar.Designer.cs">
       <DependentUpon>FrmPedidoVendaCadastrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmProdutoPesquisar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProdutoPesquisar.Designer.cs">
+      <DependentUpon>FrmProdutoPesquisar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Modelo\Controle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,6 +105,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ApresentacaoLogin\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClienteCadastrar.resx">
+      <DependentUpon>FrmClienteCadastrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmClientePesquisar.resx">
       <DependentUpon>FrmClientePesquisar.cs</DependentUpon>
@@ -104,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPedidoVendaCadastrar.resx">
       <DependentUpon>FrmPedidoVendaCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProdutoPesquisar.resx">
+      <DependentUpon>FrmProdutoPesquisar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

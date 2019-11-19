@@ -8,44 +8,62 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using ObjetoTransferencia;
 using Negocios;
+using ObjetoTransferencia;
 using System.Reflection;
 
-namespace Apresentacao
+namespace Login
 {
-    public partial class FrmClientePesquisar : Form
+    public partial class FrmProdutoPesquisar : Form
     {
-        public Cliente clienteSelecionado { get; set; }
+        public Produto produtoSelecionado { get; set; }
 
-        public FrmClientePesquisar()
+        public FrmProdutoPesquisar()
         {
             InitializeComponent();
 
             dgwPrincipal.AutoGenerateColumns = false;
         }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnSelecionar_Click(object sender, EventArgs e)
+        {
+            if (dgwPrincipal.Rows.Count < 0)
+            {
+                MessageBox.Show("Nenhuma linha selecionada. ");
+                return;
+            }
+
+            produtoSelecionado = dgwPrincipal.SelectedRows[0].DataBoundItem as Produto;
+
+            DialogResult = System.Windows.Forms.DialogResult.OK;
+        }
+
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            ClienteNegocios clienteNegocios = new ClienteNegocios();
+            ProdutoNegocios produtoNegocios = new ProdutoNegocios();
 
             //Digitou número ou nome?
-            ClienteColecao clienteColecao = new ClienteColecao();
+            ProdutoColecao produtoColecao = new ProdutoColecao();
 
             int codigoDigitado;
             if (int.TryParse(txtPesquisar.Text, out codigoDigitado) == true)
             {
                 //Conseguiu, é um número
-                clienteColecao = clienteNegocios.Consultar(codigoDigitado, null);
+                produtoColecao = produtoNegocios.Consultar(codigoDigitado, null);
             }
             else
             {
                 //Não conseguiu, é um texto
-                clienteColecao = clienteNegocios.Consultar(null, txtPesquisar.Text);
+                produtoColecao = produtoNegocios.Consultar(null, txtPesquisar.Text);
             }
 
             dgwPrincipal.DataSource = null;
-            dgwPrincipal.DataSource = clienteColecao;
+            dgwPrincipal.DataSource = produtoColecao;
 
             dgwPrincipal.Update();
             dgwPrincipal.Refresh();
@@ -105,7 +123,7 @@ namespace Apresentacao
             }
         }
 
-        private void dgwPrincipal_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        private void dgwPrincipal_CellFormatting_1(object sender, DataGridViewCellFormattingEventArgs e)
         {
             try
             {
@@ -119,24 +137,6 @@ namespace Apresentacao
 
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void btnSelecionar_Click(object sender, EventArgs e)
-        {
-            if (dgwPrincipal.Rows.Count < 0)
-            {
-                MessageBox.Show("Nenhuma linha selecionada. ");
-                return;
-            }
-
-            clienteSelecionado = dgwPrincipal.SelectedRows[0].DataBoundItem as Cliente;
-
-            DialogResult = System.Windows.Forms.DialogResult.OK;
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

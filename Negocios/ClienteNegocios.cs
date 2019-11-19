@@ -51,5 +51,26 @@ namespace Negocios
 
             return clienteColecao;
         }
+
+        public string Inserir(Cliente cliente)
+        {
+            try
+            {
+                acessoDados.LimparParametros();
+                acessoDados.AdicionarParametros("@IDPessoaCliente", cliente.Pessoa.IDPessoa);
+                acessoDados.AdicionarParametros("@Nome", cliente.Pessoa.Nome);
+                acessoDados.AdicionarParametros("@CpfCnpj", cliente.Pessoa.CpfCnpj);
+                acessoDados.AdicionarParametros("@IDPessoaTipo", cliente.Pessoa.PessoaTipo.IDPessoaTipo);
+
+                string idCliente = acessoDados.ExecutarManipulacao(
+                    CommandType.StoredProcedure, "uspClienteInserir").ToString();
+
+                return idCliente;
+            }
+            catch (Exception exception)
+            {
+                return exception.Message;
+            }
+        }
     }
 }

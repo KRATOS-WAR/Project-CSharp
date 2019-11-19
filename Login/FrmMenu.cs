@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using Login;
+
 namespace Apresentacao
 {
     public partial class FrmMenu : Form
@@ -37,6 +39,14 @@ namespace Apresentacao
             FrmPedidoVendaCadastrar frmPedidoVendaCadastrar = new FrmPedidoVendaCadastrar();
             frmPedidoVendaCadastrar.MdiParent = this;
             frmPedidoVendaCadastrar.Show();
+        }
+
+        private void menuCliente_Click(object sender, EventArgs e)
+        {
+            FrmClienteCadastrar frmClienteCadastrar = new FrmClienteCadastrar();
+            frmClienteCadastrar.MdiParent = this;
+            frmClienteCadastrar.Show();
+
         }
     }
 }

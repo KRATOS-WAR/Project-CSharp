@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 using ObjetoTransferencia;
+using Negocios;
+using Login;
 
 namespace Apresentacao
 {
@@ -17,6 +19,7 @@ namespace Apresentacao
 
         Filial filialEmitente;
         Cliente clienteDestinatario;
+        Produto produtoPesquisado;
 
         public FrmPedidoVendaCadastrar()
         {
@@ -126,6 +129,26 @@ namespace Apresentacao
                 txtDestinatario.Clear();
                 clienteDestinatario = null;
             }
+        }
+
+        private void btnPesquisarProduto_Click(object sender, EventArgs e)
+        {
+            FrmProdutoPesquisar frmProdutoPesquisar = new FrmProdutoPesquisar();
+
+            DialogResult resultado = frmProdutoPesquisar.ShowDialog();
+
+            if (resultado == System.Windows.Forms.DialogResult.OK)
+            {
+                txtProdutoCodigo.Text = Convert.ToString(frmProdutoPesquisar.produtoSelecionado.IDProduto);             
+                txtProduto.Text = frmProdutoPesquisar.produtoSelecionado.Descricao;
+
+                produtoPesquisado = frmProdutoPesquisar.produtoSelecionado;
+            }
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

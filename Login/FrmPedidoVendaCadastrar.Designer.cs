@@ -240,7 +240,7 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(695, 249);
+            this.btnExcluir.Location = new System.Drawing.Point(696, 249);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(75, 23);
             this.btnExcluir.TabIndex = 22;
@@ -386,6 +386,7 @@
             this.btnPesquisarProduto.TabIndex = 5;
             this.btnPesquisarProduto.Text = ". . .";
             this.btnPesquisarProduto.UseVisualStyleBackColor = true;
+            this.btnPesquisarProduto.Click += new System.EventHandler(this.btnPesquisarProduto_Click);
             // 
             // txtProduto
             // 
@@ -413,7 +414,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(619, 383);
+            this.btnCancelar.Location = new System.Drawing.Point(616, 383);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 24;
@@ -422,16 +423,17 @@
             // 
             // btnFechar
             // 
-            this.btnFechar.Location = new System.Drawing.Point(699, 383);
+            this.btnFechar.Location = new System.Drawing.Point(696, 383);
             this.btnFechar.Name = "btnFechar";
             this.btnFechar.Size = new System.Drawing.Size(75, 23);
             this.btnFechar.TabIndex = 26;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // btnFinalizar
             // 
-            this.btnFinalizar.Location = new System.Drawing.Point(538, 383);
+            this.btnFinalizar.Location = new System.Drawing.Point(534, 383);
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.Size = new System.Drawing.Size(75, 23);
             this.btnFinalizar.TabIndex = 27;
