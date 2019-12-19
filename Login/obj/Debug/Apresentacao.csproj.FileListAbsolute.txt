@@ -46,3 +46,5 @@ C:\Henrique\ProjetoC#\Login\bin\Debug\ObjetoTransferencia.pdb
 C:\Henrique\ProjetoC#\Login\obj\Debug\Apresentacao.csproj.CopyComplete
 C:\Henrique\ProjetoC#\Login\obj\Debug\Login.exe
 C:\Henrique\ProjetoC#\Login\obj\Debug\Login.pdb
+C:\Henrique\ProjetoC#\Login\obj\Debug\Login.FrmPessoaFisicaCadastrar.resources
+C:\Henrique\ProjetoC#\Login\obj\Debug\Login.FrmPessoaJuridicaCadastrar.resources

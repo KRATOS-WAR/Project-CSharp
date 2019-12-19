@@ -48,5 +48,19 @@ namespace Apresentacao
             frmClienteCadastrar.Show();
 
         }
+
+        private void menuPessoaFisica_Click(object sender, EventArgs e)
+        {
+            FrmPessoaFisicaCadastrar frmPessoaFisicaCadastrar = new FrmPessoaFisicaCadastrar();
+            frmPessoaFisicaCadastrar.MdiParent = this;
+            frmPessoaFisicaCadastrar.Show();
+        }
+
+        private void menuPessoaJuridica_Click(object sender, EventArgs e)
+        {
+            FrmPessoaJuridicaCadastrar frmPessoaJuridicaCadastrar = new FrmPessoaJuridicaCadastrar();
+            frmPessoaJuridicaCadastrar.MdiParent = this;
+            frmPessoaJuridicaCadastrar.Show();
+        }
     }
 }

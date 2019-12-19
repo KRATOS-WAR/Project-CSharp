@@ -20,7 +20,7 @@ namespace Negocios
 
             acessoDados.LimparParametros();
 
-            if(idPessoaCliente != null)
+            if (idPessoaCliente != null)
             {
                 acessoDados.AdicionarParametros("@IDPessoaCliente", idPessoaCliente);
             }
@@ -38,13 +38,10 @@ namespace Negocios
                 Cliente cliente = new Cliente();
 
                 cliente.Pessoa = new Pessoa();
-                cliente.Pessoa.IDPessoa = Convert.ToInt32(dataRow["IDPessoaCliente"]);
+                cliente.IDPessoacliente = Convert.ToInt32(dataRow["IDPessoaCliente"]);
+                cliente.Pessoa.PessoaTipo.IDPessoaTipo = Convert.ToInt32(dataRow["IDPessoaTipo"]);
                 cliente.Pessoa.Nome = Convert.ToString(dataRow["Nome"]);
                 cliente.Pessoa.CpfCnpj = Convert.ToString(dataRow["CpfCnpj"]);
-
-                cliente.Pessoa.PessoaTipo = new PessoaTipo();
-                cliente.Pessoa.PessoaTipo.IDPessoaTipo = Convert.ToInt32(dataRow["IDPessoaTipo"]);
-                cliente.Pessoa.PessoaTipo.Descricao = Convert.ToString(dataRow["DescricaoTipo"]);
 
                 clienteColecao.Add(cliente);
             }
@@ -57,7 +54,7 @@ namespace Negocios
             try
             {
                 acessoDados.LimparParametros();
-                acessoDados.AdicionarParametros("@IDPessoaCliente", cliente.Pessoa.IDPessoa);
+                acessoDados.AdicionarParametros("@IDPessoaCliente", cliente.IDPessoacliente);
                 acessoDados.AdicionarParametros("@Nome", cliente.Pessoa.Nome);
                 acessoDados.AdicionarParametros("@CpfCnpj", cliente.Pessoa.CpfCnpj);
                 acessoDados.AdicionarParametros("@IDPessoaTipo", cliente.Pessoa.PessoaTipo.IDPessoaTipo);

@@ -12,3 +12,4 @@ C:\Henrique\ProjetoC#\ObjetoTransferencia\bin\Debug\ObjetoTransferencia.dll
 C:\Henrique\ProjetoC#\ObjetoTransferencia\bin\Debug\ObjetoTransferencia.pdb
 C:\Henrique\ProjetoC#\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.dll
 C:\Henrique\ProjetoC#\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.pdb
+C:\Henrique\ProjetoC#\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.csprojAssemblyReference.cache

@@ -110,12 +110,14 @@
             this.menuPessoaFisica.Name = "menuPessoaFisica";
             this.menuPessoaFisica.Size = new System.Drawing.Size(180, 22);
             this.menuPessoaFisica.Text = "Pessoa Física";
+            this.menuPessoaFisica.Click += new System.EventHandler(this.menuPessoaFisica_Click);
             // 
             // menuPessoaJuridica
             // 
             this.menuPessoaJuridica.Name = "menuPessoaJuridica";
             this.menuPessoaJuridica.Size = new System.Drawing.Size(180, 22);
             this.menuPessoaJuridica.Text = "Pessoa Jurídica";
+            this.menuPessoaJuridica.Click += new System.EventHandler(this.menuPessoaJuridica_Click);
             // 
             // menuProduto
             // 
