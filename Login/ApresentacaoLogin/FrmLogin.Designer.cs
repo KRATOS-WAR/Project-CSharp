@@ -46,7 +46,7 @@
             this.btnSair.Location = new System.Drawing.Point(404, 149);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(75, 23);
-            this.btnSair.TabIndex = 0;
+            this.btnSair.TabIndex = 5;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
@@ -57,7 +57,7 @@
             this.btnEntrar.Location = new System.Drawing.Point(323, 149);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(75, 23);
-            this.btnEntrar.TabIndex = 1;
+            this.btnEntrar.TabIndex = 4;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
@@ -69,7 +69,7 @@
             this.lblLogin.Location = new System.Drawing.Point(223, 59);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(50, 16);
-            this.lblLogin.TabIndex = 2;
+            this.lblLogin.TabIndex = 0;
             this.lblLogin.Text = "Login:";
             // 
             // lblSenha
@@ -79,7 +79,7 @@
             this.lblSenha.Location = new System.Drawing.Point(223, 102);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(56, 16);
-            this.lblSenha.TabIndex = 3;
+            this.lblSenha.TabIndex = 2;
             this.lblSenha.Text = "Senha:";
             // 
             // pictureBox1
@@ -97,7 +97,7 @@
             this.txtLogin.Location = new System.Drawing.Point(273, 55);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(300, 20);
-            this.txtLogin.TabIndex = 5;
+            this.txtLogin.TabIndex = 1;
             // 
             // txtSenha
             // 
@@ -105,7 +105,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(294, 20);
-            this.txtSenha.TabIndex = 6;
+            this.txtSenha.TabIndex = 3;
             // 
             // btnCadastrarSe
             // 
@@ -113,7 +113,7 @@
             this.btnCadastrarSe.Location = new System.Drawing.Point(345, 191);
             this.btnCadastrarSe.Name = "btnCadastrarSe";
             this.btnCadastrarSe.Size = new System.Drawing.Size(110, 23);
-            this.btnCadastrarSe.TabIndex = 7;
+            this.btnCadastrarSe.TabIndex = 6;
             this.btnCadastrarSe.Text = "Cadastrar-se";
             this.btnCadastrarSe.UseVisualStyleBackColor = false;
             this.btnCadastrarSe.Click += new System.EventHandler(this.btnCadastrarSe_Click);
@@ -122,7 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(585, 235);
             this.Controls.Add(this.btnCadastrarSe);
             this.Controls.Add(this.txtSenha);

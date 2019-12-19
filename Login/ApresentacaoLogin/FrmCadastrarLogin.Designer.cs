@@ -41,6 +41,7 @@
             this.lblPontosSenha = new System.Windows.Forms.Label();
             this.lblForcaSenha = new System.Windows.Forms.Label();
             this.txtForcaSenha = new System.Windows.Forms.TextBox();
+            this.txtForcaConfirmaSenha = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,6 +98,7 @@
             this.txtConfirmarSenha.PasswordChar = '*';
             this.txtConfirmarSenha.Size = new System.Drawing.Size(228, 20);
             this.txtConfirmarSenha.TabIndex = 5;
+            this.txtConfirmarSenha.TextChanged += new System.EventHandler(this.txtConfirmarSenha_TextChanged);
             // 
             // btnCadastrar
             // 
@@ -149,7 +151,7 @@
             // 
             // txtForcaSenha
             // 
-            this.txtForcaSenha.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtForcaSenha.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.txtForcaSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtForcaSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtForcaSenha.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -159,12 +161,25 @@
             this.txtForcaSenha.TabIndex = 11;
             this.txtForcaSenha.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // txtForcaConfirmaSenha
+            // 
+            this.txtForcaConfirmaSenha.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.txtForcaConfirmaSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtForcaConfirmaSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtForcaConfirmaSenha.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtForcaConfirmaSenha.Location = new System.Drawing.Point(401, 120);
+            this.txtForcaConfirmaSenha.Name = "txtForcaConfirmaSenha";
+            this.txtForcaConfirmaSenha.Size = new System.Drawing.Size(172, 15);
+            this.txtForcaConfirmaSenha.TabIndex = 13;
+            this.txtForcaConfirmaSenha.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // FrmCadastrarLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(585, 235);
+            this.Controls.Add(this.txtForcaConfirmaSenha);
             this.Controls.Add(this.txtForcaSenha);
             this.Controls.Add(this.lblForcaSenha);
             this.Controls.Add(this.lblPontosSenha);
@@ -177,6 +192,7 @@
             this.Controls.Add(this.lblConfirmarSenha);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblLogin);
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCadastrarLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -201,5 +217,6 @@
         private System.Windows.Forms.Label lblPontosSenha;
         private System.Windows.Forms.Label lblForcaSenha;
         private System.Windows.Forms.TextBox txtForcaSenha;
+        private System.Windows.Forms.TextBox txtForcaConfirmaSenha;
     }
 }

@@ -20,3 +20,14 @@ C:\Users\henri\Source\Repos\Project-CSharp\Negocios\obj\Debug\Negocios.csprojAss
 C:\Users\henri\Source\Repos\Project-CSharp\Negocios\obj\Debug\Negocios.csproj.CopyComplete
 C:\Users\henri\Source\Repos\Project-CSharp\Negocios\obj\Debug\Negocios.dll
 C:\Users\henri\Source\Repos\Project-CSharp\Negocios\obj\Debug\Negocios.pdb
+C:\Henrique\ProjetoC#\Negocios\bin\Debug\Negocios.dll
+C:\Henrique\ProjetoC#\Negocios\bin\Debug\Negocios.pdb
+C:\Henrique\ProjetoC#\Negocios\bin\Debug\AcessoBancoDados.dll
+C:\Henrique\ProjetoC#\Negocios\bin\Debug\ObjetoTransferencia.dll
+C:\Henrique\ProjetoC#\Negocios\bin\Debug\AcessoBancoDados.pdb
+C:\Henrique\ProjetoC#\Negocios\bin\Debug\AcessoBancoDados.dll.config
+C:\Henrique\ProjetoC#\Negocios\bin\Debug\ObjetoTransferencia.pdb
+C:\Henrique\ProjetoC#\Negocios\obj\Debug\Negocios.csprojAssemblyReference.cache
+C:\Henrique\ProjetoC#\Negocios\obj\Debug\Negocios.csproj.CopyComplete
+C:\Henrique\ProjetoC#\Negocios\obj\Debug\Negocios.dll
+C:\Henrique\ProjetoC#\Negocios\obj\Debug\Negocios.pdb

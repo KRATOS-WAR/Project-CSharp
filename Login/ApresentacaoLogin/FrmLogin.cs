@@ -40,9 +40,10 @@ namespace Login
             if (controle.mensagem.Equals(""))
             {
                 if (controle.tem)
-                {
-                    MessageBox.Show("Logado Com Sucesso!", "Entrando", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                {                  
+                    this.Hide();
                     FrmMenu frmMenu = new FrmMenu();
+                    frmMenu.Closed += (s, args) => this.Close();
                     frmMenu.Show();
                 }
                 else

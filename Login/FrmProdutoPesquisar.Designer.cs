@@ -33,9 +33,9 @@
             this.btnPesquisar = new System.Windows.Forms.Button();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.dgwPrincipal = new System.Windows.Forms.DataGridView();
-            this.lblPesquisar = new System.Windows.Forms.Label();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblPesquisar = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgwPrincipal)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,15 +91,6 @@
             this.dgwPrincipal.TabIndex = 9;
             this.dgwPrincipal.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dgwPrincipal_CellFormatting_1);
             // 
-            // lblPesquisar
-            // 
-            this.lblPesquisar.AutoSize = true;
-            this.lblPesquisar.Location = new System.Drawing.Point(8, 9);
-            this.lblPesquisar.Name = "lblPesquisar";
-            this.lblPesquisar.Size = new System.Drawing.Size(79, 13);
-            this.lblPesquisar.TabIndex = 6;
-            this.lblPesquisar.Text = "Código | Nome:";
-            // 
             // Codigo
             // 
             this.Codigo.DataPropertyName = "IDProduto";
@@ -115,6 +106,15 @@
             this.Nome.ReadOnly = true;
             this.Nome.Width = 300;
             // 
+            // lblPesquisar
+            // 
+            this.lblPesquisar.AutoSize = true;
+            this.lblPesquisar.Location = new System.Drawing.Point(8, 9);
+            this.lblPesquisar.Name = "lblPesquisar";
+            this.lblPesquisar.Size = new System.Drawing.Size(79, 13);
+            this.lblPesquisar.TabIndex = 6;
+            this.lblPesquisar.Text = "Código | Nome:";
+            // 
             // FrmProdutoPesquisar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -127,6 +127,7 @@
             this.Controls.Add(this.dgwPrincipal);
             this.Controls.Add(this.lblPesquisar);
             this.Name = "FrmProdutoPesquisar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pesquisar Produto";
             ((System.ComponentModel.ISupportInitialize)(this.dgwPrincipal)).EndInit();
             this.ResumeLayout(false);

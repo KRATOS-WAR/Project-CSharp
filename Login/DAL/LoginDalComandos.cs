@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Apresentacao;
 using Login.DAL;
 using AcessoBancoDados;
 using System.Data;
@@ -23,9 +23,9 @@ namespace Login.DAL
         public bool verificarLogin(String login, String senha)
         {
             //Procurar no banco esse login e senha
-            cmd.CommandText = "SELECT * FROM tblLogin WHERE Usuario = @login AND Senha = @Senha";
-            cmd.Parameters.AddWithValue("@login", login);
-            cmd.Parameters.AddWithValue("@senha", senha);
+            cmd.CommandText = "SELECT * FROM tblLogin WHERE Usuario = @Usuario AND Senha = @Senha";
+            cmd.Parameters.AddWithValue("@Usuario", login);
+            cmd.Parameters.AddWithValue("@Senha", senha);
 
             try
             {
@@ -65,12 +65,14 @@ namespace Login.DAL
                 string idLogin = acessoDados.ExecutarManipulacao(
                     CommandType.StoredProcedure, "uspLoginInserir").ToString();
 
-                mensagem = idLogin;
-             
+                mensagem = idLogin; 
+
+
                 try
                 {
                     cmd.Connection = conexao.Conectar();
-                    //cmd.ExecuteNonQuery();
+                    //cmd.ExecuteNonQuery();                  
+
                     if(mensagem == "Login já existe")
                     {
                         conexao.Desconectar();
@@ -83,6 +85,8 @@ namespace Login.DAL
                         this.mensagem = "Cadastrado com Sucesso";
                         tem = true;
                     }
+
+                    
                 }
                 catch (SqlException)
                 {

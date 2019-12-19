@@ -8,3 +8,7 @@ C:\Users\henri\Source\Repos\Project-CSharp\ObjetoTransferencia\bin\Debug\ObjetoT
 C:\Users\henri\Source\Repos\Project-CSharp\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.dll
 C:\Users\henri\Source\Repos\Project-CSharp\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.pdb
 C:\Users\henri\source\repos\Project-CSharp\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.csprojAssemblyReference.cache
+C:\Henrique\ProjetoC#\ObjetoTransferencia\bin\Debug\ObjetoTransferencia.dll
+C:\Henrique\ProjetoC#\ObjetoTransferencia\bin\Debug\ObjetoTransferencia.pdb
+C:\Henrique\ProjetoC#\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.dll
+C:\Henrique\ProjetoC#\ObjetoTransferencia\obj\Debug\ObjetoTransferencia.pdb

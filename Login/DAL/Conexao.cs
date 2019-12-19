@@ -12,7 +12,7 @@ namespace Login.DAL
         SqlConnection con = new SqlConnection();
         public Conexao()
         {
-            con.ConnectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=TREINO_HENRIQUE;Integrated Security=True";
+            con.ConnectionString = @"Data Source=DEV-02;Initial Catalog=TREINO_HENRIQUE;Integrated Security=True";
         }
 
         public SqlConnection Conectar()
