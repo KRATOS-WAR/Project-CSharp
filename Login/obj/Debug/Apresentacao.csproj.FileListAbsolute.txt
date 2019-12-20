@@ -48,3 +48,5 @@ C:\Henrique\ProjetoC#\Login\obj\Debug\Login.exe
 C:\Henrique\ProjetoC#\Login\obj\Debug\Login.pdb
 C:\Henrique\ProjetoC#\Login\obj\Debug\Login.FrmPessoaFisicaCadastrar.resources
 C:\Henrique\ProjetoC#\Login\obj\Debug\Login.FrmPessoaJuridicaCadastrar.resources
+C:\Henrique\ProjetoC#\Login\obj\Debug\Login.FrmProdutoCadastrar.resources
+C:\Henrique\ProjetoC#\Login\obj\Debug\Login.FrmFornecedorCadastrar.resources

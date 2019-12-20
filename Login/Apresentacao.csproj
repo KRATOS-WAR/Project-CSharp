@@ -91,6 +91,18 @@
     <Compile Include="FrmPedidoVendaCadastrar.Designer.cs">
       <DependentUpon>FrmPedidoVendaCadastrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmFornecedorCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFornecedorCadastrar.Designer.cs">
+      <DependentUpon>FrmFornecedorCadastrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProdutoCadastrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProdutoCadastrar.Designer.cs">
+      <DependentUpon>FrmProdutoCadastrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPessoaJuridicaCadastrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +144,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPedidoVendaCadastrar.resx">
       <DependentUpon>FrmPedidoVendaCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFornecedorCadastrar.resx">
+      <DependentUpon>FrmFornecedorCadastrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProdutoCadastrar.resx">
+      <DependentUpon>FrmProdutoCadastrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPessoaJuridicaCadastrar.resx">
       <DependentUpon>FrmPessoaJuridicaCadastrar.cs</DependentUpon>

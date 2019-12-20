@@ -9,6 +9,10 @@ namespace ObjetoTransferencia
     public class Produto
     {
         public int IDProduto { get; set; }
+        public int CodigoProduto { get; set; }
         public string Descricao { get; set; }
+        public string MarcaFabricante { get; set; }
+        public string UnidadeMedida { get; set; }
+        public decimal PrecoUnitario { get; set; }
     }
 }

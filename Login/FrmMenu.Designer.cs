@@ -104,6 +104,7 @@
             this.menuFornecedor.Name = "menuFornecedor";
             this.menuFornecedor.Size = new System.Drawing.Size(180, 22);
             this.menuFornecedor.Text = "Fornecedor";
+            this.menuFornecedor.Click += new System.EventHandler(this.menuFornecedor_Click);
             // 
             // menuPessoaFisica
             // 
@@ -124,6 +125,7 @@
             this.menuProduto.Name = "menuProduto";
             this.menuProduto.Size = new System.Drawing.Size(180, 22);
             this.menuProduto.Text = "Produto";
+            this.menuProduto.Click += new System.EventHandler(this.menuProduto_Click);
             // 
             // menuVenda
             // 

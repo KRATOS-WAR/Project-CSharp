@@ -19,7 +19,11 @@ namespace Negocios
             try
             {
                 acessoDados.LimparParametros();
+                acessoDados.AdicionarParametros("@CodigoProduto", produto.CodigoProduto);
                 acessoDados.AdicionarParametros("@Descricao", produto.Descricao);
+                acessoDados.AdicionarParametros("@MarcaFabricante", produto.MarcaFabricante);
+                acessoDados.AdicionarParametros("@UnidadeMedida", produto.UnidadeMedida);
+                acessoDados.AdicionarParametros("@PrecoUnitario", produto.PrecoUnitario);
 
                 string idProduto = acessoDados.ExecutarManipulacao(
                     CommandType.StoredProcedure, "uspProdutoInserir").ToString();
