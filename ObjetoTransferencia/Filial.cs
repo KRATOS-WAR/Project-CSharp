@@ -2,6 +2,9 @@
 {
     public class Filial
     {
-        public Pessoa Pessoa { get; set; }
+        public int IDFilial { get; set; }
+        public int CodigoFilial { get; set; }
+        public string CNPJFilial { get; set; }
+        public string DescricaoFilial { get; set; }
     }
 }

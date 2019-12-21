@@ -24,15 +24,12 @@ namespace Login
         {
                 Cliente cliente = new Cliente();
 
-                cliente.Pessoa.Nome = txtNome.Text;
-                cliente.Pessoa.CpfCnpj = txtCpfCnpj.Text;
-                cliente.Pessoa.PessoaTipo.IDPessoaTipo = Convert.ToInt32(radioFisica);
-                cliente.Pessoa.PessoaTipo.IDPessoaTipo = Convert.ToInt32(RadioJurudica);
-
-                if (radioFisica.Checked == true)
-                    cliente.Pessoa.PessoaTipo.IDPessoaTipo = 1;
-                else
-                    cliente.Pessoa.PessoaTipo.IDPessoaTipo = 2;
+                cliente.Nome = txtNome.Text;
+                cliente.CpfCnpj = txtCpfCnpj.Text;
+                cliente.RG = txtRG.Text;
+                cliente.Endereco = txtEndereco.Text;
+                cliente.Celular = txtCelular.Text;
+                cliente.DataNascimento = Convert.ToDateTime(dtpDatanascimento.Value);
 
                 ClienteNegocios clienteNegocios = new ClienteNegocios();
 

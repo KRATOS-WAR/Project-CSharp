@@ -14,78 +14,98 @@ namespace Negocios
     {
         AcessoDadosSqlServer acessoDados = new AcessoDadosSqlServer();
 
-        public FilialColecao ConsultarPorCodigo(int idPessoaFilial)
+        public string Inserir(Filial filial)
         {
             try
             {
-                FilialColecao filialColecao = new FilialColecao();
-
                 acessoDados.LimparParametros();
-                acessoDados.AdicionarParametros("@IDPessoaFilial", idPessoaFilial);
+                acessoDados.AdicionarParametros("@CodigoFilial", filial.CodigoFilial);
+                acessoDados.AdicionarParametros("@CNPJFilial", filial.CNPJFilial);
+                acessoDados.AdicionarParametros("@DescricaoFilial", filial.DescricaoFilial);
 
-                DataTable dataTable = acessoDados.ExecutarConsulta(
-                    CommandType.StoredProcedure, "uspFilialConsultarPorCodigo");
+                string idFilial = acessoDados.ExecutarManipulacao(
+                    CommandType.StoredProcedure, "uspFilialInserir").ToString();
 
-                foreach (DataRow dataRow in dataTable.Rows)
-                {
-                    Filial filial = new Filial();
-
-                    filial.Pessoa = new Pessoa();
-                    filial.Pessoa.IDPessoa = Convert.ToInt32(dataRow["IDPessoaFilial"]);
-                    filial.Pessoa.Nome = Convert.ToString(dataRow["Nome"]);
-                    filial.Pessoa.CpfCnpj = Convert.ToString(dataRow["CpfCnpj"]);
-
-                    filial.Pessoa.PessoaTipo = new PessoaTipo();
-                    filial.Pessoa.PessoaTipo.IDPessoaTipo = Convert.ToInt32(dataRow["IDPessoaTipo"]);
-                    filial.Pessoa.PessoaTipo.Descricao = Convert.ToString(dataRow["DescricaoTipo"]);
-
-                    filialColecao.Add(filial);
-                }
-
-                return filialColecao;
+                return idFilial;
             }
-            catch (Exception erroOcorrido)
+            catch (Exception exception)
             {
-                throw new Exception("Erro ao consultar filial por código. Detalhes: " +
-                    erroOcorrido.Message);
+                return exception.Message;
             }
         }
 
-        public FilialColecao ConsultarPorNome(string nome)
-        {
-            try
-            {
-                FilialColecao filialColecao = new FilialColecao();
+        //public FilialColecao ConsultarPorCodigo(int idPessoaFilial)
+        //{
+        //    try
+        //    {
+        //        FilialColecao filialColecao = new FilialColecao();
 
-                acessoDados.LimparParametros();
-                acessoDados.AdicionarParametros("@Nome", nome);
+        //        acessoDados.LimparParametros();
+        //        acessoDados.AdicionarParametros("@IDPessoaFilial", idPessoaFilial);
 
-                DataTable dataTable = acessoDados.ExecutarConsulta(
-                    CommandType.StoredProcedure, "uspFilialConsultarPorNome");
+        //        DataTable dataTable = acessoDados.ExecutarConsulta(
+        //            CommandType.StoredProcedure, "uspFilialConsultarPorCodigo");
 
-                foreach (DataRow dataRow in dataTable.Rows)
-                {
-                    Filial filial = new Filial();
+        //        foreach (DataRow dataRow in dataTable.Rows)
+        //        {
+        //            Filial filial = new Filial();
 
-                    filial.Pessoa = new Pessoa();
-                    filial.Pessoa.IDPessoa = Convert.ToInt32(dataRow["IDPessoaFilial"]);
-                    filial.Pessoa.Nome = Convert.ToString(dataRow["Nome"]);
-                    filial.Pessoa.CpfCnpj = Convert.ToString(dataRow["CpfCnpj"]);
+        //            filial.Pessoa = new Pessoa();
+        //            filial.Pessoa.IDPessoa = Convert.ToInt32(dataRow["IDPessoaFilial"]);
+        //            filial.Pessoa.Nome = Convert.ToString(dataRow["Nome"]);
+        //            filial.Pessoa.CpfCnpj = Convert.ToString(dataRow["CpfCnpj"]);
 
-                    filial.Pessoa.PessoaTipo = new PessoaTipo();
-                    filial.Pessoa.PessoaTipo.IDPessoaTipo = Convert.ToInt32(dataRow["IDPessoaTipo"]);
-                    filial.Pessoa.PessoaTipo.Descricao = Convert.ToString(dataRow["DescricaoTipo"]);
+        //            filial.Pessoa.PessoaTipo = new PessoaTipo();
+        //            filial.Pessoa.PessoaTipo.IDPessoaTipo = Convert.ToInt32(dataRow["IDPessoaTipo"]);
+        //            filial.Pessoa.PessoaTipo.Descricao = Convert.ToString(dataRow["DescricaoTipo"]);
 
-                    filialColecao.Add(filial);
-                }
+        //            filialColecao.Add(filial);
+        //        }
 
-                return filialColecao;
-            }
-            catch (Exception erroOcorrido)
-            {
-                throw new Exception("Erro ao consultar filial por nome. Detalhes: " +
-                    erroOcorrido.Message);
-            }
-        }
+        //        return filialColecao;
+        //    }
+        //    catch (Exception erroOcorrido)
+        //    {
+        //        throw new Exception("Erro ao consultar filial por código. Detalhes: " +
+        //            erroOcorrido.Message);
+        //    }
+        //}
+
+        //public FilialColecao ConsultarPorNome(string nome)
+        //{
+        //    try
+        //    {
+        //        FilialColecao filialColecao = new FilialColecao();
+
+        //        acessoDados.LimparParametros();
+        //        acessoDados.AdicionarParametros("@Nome", nome);
+
+        //        DataTable dataTable = acessoDados.ExecutarConsulta(
+        //            CommandType.StoredProcedure, "uspFilialConsultarPorNome");
+
+        //        foreach (DataRow dataRow in dataTable.Rows)
+        //        {
+        //            Filial filial = new Filial();
+
+        //            filial.Pessoa = new Pessoa();
+        //            filial.Pessoa.IDPessoa = Convert.ToInt32(dataRow["IDPessoaFilial"]);
+        //            filial.Pessoa.Nome = Convert.ToString(dataRow["Nome"]);
+        //            filial.Pessoa.CpfCnpj = Convert.ToString(dataRow["CpfCnpj"]);
+
+        //            filial.Pessoa.PessoaTipo = new PessoaTipo();
+        //            filial.Pessoa.PessoaTipo.IDPessoaTipo = Convert.ToInt32(dataRow["IDPessoaTipo"]);
+        //            filial.Pessoa.PessoaTipo.Descricao = Convert.ToString(dataRow["DescricaoTipo"]);
+
+        //            filialColecao.Add(filial);
+        //        }
+
+        //        return filialColecao;
+        //    }
+        //    catch (Exception erroOcorrido)
+        //    {
+        //        throw new Exception("Erro ao consultar filial por nome. Detalhes: " +
+        //            erroOcorrido.Message);
+        //    }
+        //}
     }
 }

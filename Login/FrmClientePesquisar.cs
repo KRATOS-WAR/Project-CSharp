@@ -36,12 +36,12 @@ namespace Apresentacao
             if (int.TryParse(txtPesquisar.Text, out codigoDigitado) == true)
             {
                 //Conseguiu, é um número
-                clienteColecao = clienteNegocios.Consultar(codigoDigitado, null);
+                //clienteColecao = clienteNegocios.Consultar(codigoDigitado, null);
             }
             else
             {
                 //Não conseguiu, é um texto
-                clienteColecao = clienteNegocios.Consultar(null, txtPesquisar.Text);
+                //clienteColecao = clienteNegocios.Consultar(null, txtPesquisar.Text);
             }
 
             dgwPrincipal.DataSource = null;

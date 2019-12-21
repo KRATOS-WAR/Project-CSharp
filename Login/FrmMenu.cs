@@ -76,5 +76,12 @@ namespace Apresentacao
             frmFornecedorCadastrar.MdiParent = this;
             frmFornecedorCadastrar.Show();
         }
+
+        private void menuFilial_Click(object sender, EventArgs e)
+        {
+            FrmFilialCadastrar frmFilialCadastrar = new FrmFilialCadastrar();
+            frmFilialCadastrar.MdiParent = this;
+            frmFilialCadastrar.Show();
+        }
     }
 }

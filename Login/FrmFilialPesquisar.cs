@@ -42,11 +42,11 @@ namespace Apresentacao
             if (int.TryParse(txtPesquisar.Text, out codigoDigitado) == true)
             {
                 //Conseguiu, é um número
-                filialColecao = filialNegocios.ConsultarPorCodigo(codigoDigitado);
+                //filialColecao = filialNegocios.ConsultarPorCodigo(codigoDigitado);
             }
             else{
                 //Não conseguiu, é um texto
-                filialColecao = filialNegocios.ConsultarPorNome(txtPesquisar.Text);
+                //filialColecao = filialNegocios.ConsultarPorNome(txtPesquisar.Text);
             }
 
             dgwPrincipal.DataSource = null;

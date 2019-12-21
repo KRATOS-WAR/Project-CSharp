@@ -93,7 +93,7 @@ namespace Apresentacao
 
             if(resultado == System.Windows.Forms.DialogResult.OK)
             {
-                txtEmitente.Text = frmFilialPesquisar.filialSelecionada.Pessoa.Nome;
+                txtEmitente.Text = frmFilialPesquisar.filialSelecionada.DescricaoFilial;
 
                 filialEmitente = frmFilialPesquisar.filialSelecionada;
             }
@@ -116,7 +116,7 @@ namespace Apresentacao
 
             if (resultado == System.Windows.Forms.DialogResult.OK)
             {
-                txtDestinatario.Text = frmClientePesquisar.clienteSelecionado.Pessoa.Nome;
+                txtDestinatario.Text = frmClientePesquisar.clienteSelecionado.Nome;
 
                 clienteDestinatario = frmClientePesquisar.clienteSelecionado;
             }

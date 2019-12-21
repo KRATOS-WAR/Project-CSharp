@@ -14,50 +14,52 @@ namespace Negocios
     {
         AcessoDadosSqlServer acessoDados = new AcessoDadosSqlServer();
 
-        public ClienteColecao Consultar(int? idPessoaCliente, string nome)
-        {
-            ClienteColecao clienteColecao = new ClienteColecao();
+        //public ClienteColecao Consultar(int? idPessoaCliente, string nome)
+        //{
+        //    ClienteColecao clienteColecao = new ClienteColecao();
 
-            acessoDados.LimparParametros();
+        //    acessoDados.LimparParametros();
 
-            if (idPessoaCliente != null)
-            {
-                acessoDados.AdicionarParametros("@IDPessoaCliente", idPessoaCliente);
-            }
+        //    if (idPessoaCliente != null)
+        //    {
+        //        acessoDados.AdicionarParametros("@IDPessoaCliente", idPessoaCliente);
+        //    }
 
-            if (nome != null)
-            {
-                acessoDados.AdicionarParametros("@Nome", nome);
-            }
+        //    if (nome != null)
+        //    {
+        //        acessoDados.AdicionarParametros("@Nome", nome);
+        //    }
 
-            DataTable dataTable = acessoDados.ExecutarConsulta(
-                    CommandType.StoredProcedure, "uspClienteConsultarPorCodigoNome");
+        //    DataTable dataTable = acessoDados.ExecutarConsulta(
+        //            CommandType.StoredProcedure, "uspClienteConsultarPorCodigoNome");
 
-            foreach (DataRow dataRow in dataTable.Rows)
-            {
-                Cliente cliente = new Cliente();
+        //    foreach (DataRow dataRow in dataTable.Rows)
+        //    {
+        //        Cliente cliente = new Cliente();
 
-                cliente.Pessoa = new Pessoa();
-                cliente.IDPessoacliente = Convert.ToInt32(dataRow["IDPessoaCliente"]);
-                cliente.Pessoa.PessoaTipo.IDPessoaTipo = Convert.ToInt32(dataRow["IDPessoaTipo"]);
-                cliente.Pessoa.Nome = Convert.ToString(dataRow["Nome"]);
-                cliente.Pessoa.CpfCnpj = Convert.ToString(dataRow["CpfCnpj"]);
+        //        cliente.Pessoa = new Pessoa();
+        //        cliente.IDPessoacliente = Convert.ToInt32(dataRow["IDPessoaCliente"]);
+        //        cliente.Pessoa.PessoaTipo.IDPessoaTipo = Convert.ToInt32(dataRow["IDPessoaTipo"]);
+        //        cliente.Pessoa.Nome = Convert.ToString(dataRow["Nome"]);
+        //        cliente.Pessoa.CpfCnpj = Convert.ToString(dataRow["CpfCnpj"]);
 
-                clienteColecao.Add(cliente);
-            }
+        //        clienteColecao.Add(cliente);
+        //    }
 
-            return clienteColecao;
-        }
+        //    return clienteColecao;
+        //}
 
         public string Inserir(Cliente cliente)
         {
             try
             {
                 acessoDados.LimparParametros();
-                acessoDados.AdicionarParametros("@IDPessoaCliente", cliente.IDPessoacliente);
-                acessoDados.AdicionarParametros("@Nome", cliente.Pessoa.Nome);
-                acessoDados.AdicionarParametros("@CpfCnpj", cliente.Pessoa.CpfCnpj);
-                acessoDados.AdicionarParametros("@IDPessoaTipo", cliente.Pessoa.PessoaTipo.IDPessoaTipo);
+                acessoDados.AdicionarParametros("@Nome", cliente.Nome);
+                acessoDados.AdicionarParametros("@CpfCnpj", cliente.CpfCnpj);
+                acessoDados.AdicionarParametros("@RG", cliente.RG);
+                acessoDados.AdicionarParametros("@Endereco", cliente.Endereco);
+                acessoDados.AdicionarParametros("@Celular", cliente.Celular);
+                acessoDados.AdicionarParametros("@DataNascimento", cliente.DataNascimento);
 
                 string idCliente = acessoDados.ExecutarManipulacao(
                     CommandType.StoredProcedure, "uspClienteInserir").ToString();

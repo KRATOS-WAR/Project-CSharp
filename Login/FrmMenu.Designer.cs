@@ -98,6 +98,7 @@
             this.menuFilial.Name = "menuFilial";
             this.menuFilial.Size = new System.Drawing.Size(180, 22);
             this.menuFilial.Text = "Filial";
+            this.menuFilial.Click += new System.EventHandler(this.menuFilial_Click);
             // 
             // menuFornecedor
             // 

@@ -8,10 +8,12 @@ namespace ObjetoTransferencia
 {
     public class Cliente
     {
-        public int IDPessoacliente { get; set; }
-        public Pessoa Pessoa { get; set; }
-        public Pessoa Nome { get; set; }
-        public Pessoa CpfCnpj { get; set; }
-        public PessoaTipo IDPessoaTipo { get; set; }
+        public int IDCliente { get; set; }
+        public string Nome { get; set; }
+        public string CpfCnpj { get; set; }
+        public string RG { get; set; }
+        public string Endereco { get; set; }
+        public string Celular { get; set; }
+        public DateTime DataNascimento { get; set; }
     }
 }
